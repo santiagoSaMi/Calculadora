@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <link rel="stylesheet" href="calc.css">
+        <title>CALCULADORA</title>
+    </head>
+    <body>
+        <header>
+            <h1>CALCULADORA</h1>
+            <p>Diseño inspirado en Windows 98.</p>
+        </header>
+        <main id="content">
+            <div class="screen" id="screen">0</div>
+            <div class="control">
+                <button id="toggle">Day/Night</button>
+                <button onclick="clearHistory()">C History</button>
+                <button onclick="clearScreen()">C</button>
+                <button onclick="addTerm('/')">/</button>
+
+                <button onclick="addTerm('7')">7</button>
+                <button onclick="addTerm('8')">8</button>
+                <button onclick="addTerm('9')">9</button>
+                <button onclick="addTerm('*')">*</button>
+                
+                <button onclick="addTerm('4')">4</button>
+                <button onclick="addTerm('5')">5</button>
+                <button onclick="addTerm('6')">6</button>
+                <button onclick="addTerm('-')">-</button>
+
+                <button onclick="addTerm('1')">1</button>
+                <button onclick="addTerm('2')">2</button>
+                <button onclick="addTerm('3')">3</button>
+                <button onclick="addTerm('+')">+</button>
+                
+                <button class="combHoriz" onclick="addTerm('0')">0</button>
+                <button onclick="addTerm('.')">.</button>
+                <button onclick="result()">=</button>
+            </div>
+            <div>
+                <ul id="history"></ul>
+            </div>
+        </main>
+        <script src="calc.js"></script>
+    </body>
+</html>
